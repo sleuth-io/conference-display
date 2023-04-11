@@ -1,0 +1,7 @@
+obsws-python
+pyyaml
+
+pytest
+black
+reorder-python-imports
+
