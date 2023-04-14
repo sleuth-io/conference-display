@@ -31,6 +31,8 @@ idna==3.4
     # via trio
 iniconfig==2.0.0
     # via pytest
+mouseinfo==0.1.3
+    # via pyautogui
 mypy-extensions==1.0.0
     # via black
 obsws-python==1.4.2
@@ -47,10 +49,28 @@ platformdirs==3.2.0
     # via black
 pluggy==1.0.0
     # via pytest
+pyautogui==0.9.53
+    # via -r requirements.in
+pygetwindow==0.0.9
+    # via pyautogui
+pymsgbox==1.0.9
+    # via pyautogui
+pyperclip==1.8.2
+    # via mouseinfo
+pyrect==0.2.0
+    # via pygetwindow
+pyscreeze==0.1.28
+    # via pyautogui
 pysocks==1.7.1
     # via urllib3
 pytest==7.3.0
     # via -r requirements.in
+python3-xlib==0.15
+    # via
+    #   mouseinfo
+    #   pyautogui
+pytweening==1.0.4
+    # via pyautogui
 pyyaml==6.0
     # via -r requirements.in
 reorder-python-imports==3.9.0

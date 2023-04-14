@@ -2,6 +2,7 @@ obsws-python
 pyyaml
 evdev
 selenium
+pyautogui
 
 pytest
 black

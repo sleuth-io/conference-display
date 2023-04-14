@@ -31,7 +31,6 @@ class Clicker:
         self.trivia = trivia
         self.data = data
         self.device = None
-        self.driver = None
 
     async def _process_event(self, code):
 
@@ -59,20 +58,7 @@ class Clicker:
             window.alt_tab()
             pass # obs.set_scene("requests.SetCurrentScene("Slides - Video"))
         if code == ecodes.KEY_VOLUMEUP:
-            from selenium import webdriver
-
-            chromeOptions = webdriver.ChromeOptions()
-            chromeOptions.add_argument("--no-sandbox")
-            chromeOptions.add_argument("--disable-setuid-sandbox")
-            chromeOptions.add_argument("--disable-dev-shm-using")
-            chromeOptions.add_argument("--disable-extensions")
-            chromeOptions.add_argument("start-maximized")
-            chromeOptions.add_argument("disable-infobars")
-            chromeOptions.add_argument("--remote-debugging-port=9222")
-            driver = webdriver.Chrome(chrome_options=chromeOptions)
-            driver.get('https://app.sleuth.io/sleuth/sleuth')
-            driver.fullscreen_window()
-            self.driver = driver
+            pass
         else:
             print(f"Unknown key: {code}")
 

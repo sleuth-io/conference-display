@@ -7,6 +7,7 @@ import time
 import yaml
 
 from sleuthconf.clicker import Clicker
+from sleuthconf.demo import Demo
 from sleuthconf.obs import OBS
 from sleuthconf.trivia import Trivia
 
@@ -31,6 +32,8 @@ def main():
             exit(1)
 
     trivia = Trivia(data)
+    demo = Demo()
+    demo.start()
     obs = OBS("sleuth", on_connect=on_connect)
     clicker = Clicker(obs, trivia, data)
     clicker.start()
