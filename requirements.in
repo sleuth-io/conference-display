@@ -1,5 +1,6 @@
 obsws-python
 pyyaml
+evdev
 
 pytest
 black

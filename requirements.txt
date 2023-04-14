@@ -10,6 +10,8 @@ classify-imports==4.2.0
     # via reorder-python-imports
 click==8.1.3
     # via black
+evdev==1.6.1
+    # via -r requirements.in
 exceptiongroup==1.1.1
     # via pytest
 iniconfig==2.0.0

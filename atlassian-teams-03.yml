@@ -1,9 +1,11 @@
 questions:
-  - name: What is the wind speed of the an unladen swallow?
-    answer: African or European
-  - name: What is your question?
-    answer: The quest for the Holy Grail
-  - name: What is your name?
-    answer: Lancelot
-  - name: What is your favourite colour?
-    answer: Red....no! Blue!
+  - name: What was the first Atlassian product?
+    answer: Not JIRA! It was support for the Orion Application Server.
+  - name: Who was the first Jira architect?
+    answer: Sleuth's very own co-founder and CEO, Dylan Etkin
+  - name: Where was the first non-Australian Atlassian office located?
+    answer: New York. It was shut down a few months later, reappearing years later with the Trello acquisition.
+  - name: What was the first Atlassian product sold as a Cloud service?
+    answer: Confluence, where you could purchase one or more spaces. The product surfaced in 2007.
+  - name: What product did Atlassian purchase, rewrite, and later release as Bamboo?
+    answer: Beatlejuice, a build or continuous integration server

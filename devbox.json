@@ -1,8 +1,17 @@
 {
   "packages": [
     "python310",
-    "pipenv"
+    "python310Packages.tkinter",
+    "pipenv",
+    "chromedriver"
   ],
+  "shell": {
+    "init_hook": [
+      "test -d venv || make venv",
+      "echo '\nMake commands:\n' && make",
+      "source venv/bin/activate"
+    ]
+  },
   "nixpkgs": {
     "commit": "f80ac848e3d6f0c12c52758c0f25c10c97ca3b62"
   }
