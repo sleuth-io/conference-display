@@ -12,13 +12,6 @@ from sleuthconf.obs import OBS
 from sleuthconf.trivia import Trivia
 
 
-def on_connect(obs):
-    obs.call("OpenVideoMixProjector", {
-        "videoMixType": "OBS_WEBSOCKET_VIDEO_MIX_TYPE_PREVIEW",
-        "monitorIndex": 1
-    })
-
-
 def main():
     parser = argparse.ArgumentParser(description="The trivial file")
     parser.add_argument("trivia", help="The trivia YAML file")
@@ -33,7 +26,14 @@ def main():
 
     trivia = Trivia(data)
     demo = Demo()
-    demo.start()
+
+    def on_connect(obs):
+        demo.start()
+        obs.call("OpenVideoMixProjector", {
+            "videoMixType": "OBS_WEBSOCKET_VIDEO_MIX_TYPE_PREVIEW",
+            "monitorIndex": 1
+        })
+
     obs = OBS("sleuth", on_connect=on_connect)
     obs.start_fullscreen_preview()
     clicker = Clicker(obs, trivia, data)
