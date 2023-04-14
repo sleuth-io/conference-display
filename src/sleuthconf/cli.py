@@ -10,6 +10,7 @@ from sleuthconf.clicker import Clicker
 from sleuthconf.demo import Demo
 from sleuthconf.obs import OBS
 from sleuthconf.trivia import Trivia
+from sleuthconf.window import Window
 
 
 def main():
@@ -24,6 +25,7 @@ def main():
             print(exc)
             exit(1)
 
+    window = Window()
     trivia = Trivia(data)
     demo = Demo()
 
@@ -36,7 +38,7 @@ def main():
 
     obs = OBS("sleuth", on_connect=on_connect)
     obs.start_fullscreen_preview()
-    clicker = Clicker(obs, trivia, data)
+    clicker = Clicker(obs, window, trivia, data)
     clicker.start()
 
     try:

@@ -11,6 +11,7 @@ from evdev import ecodes
 from sleuthconf import window
 from sleuthconf.obs import OBS
 from sleuthconf.trivia import Trivia
+from sleuthconf.window import Window
 
 
 def find_device(name):
@@ -26,16 +27,17 @@ def find_device(name):
 
 
 class Clicker:
-    def __init__(self, obs: OBS, trivia: Trivia, data: dict):
+    def __init__(self, obs: OBS, window: Window, trivia: Trivia, data: dict):
         self.obs = obs
         self.trivia = trivia
+        self.window = window
         self.data = data
         self.device = None
 
     async def _process_event(self, code):
 
         if code == ecodes.KEY_PLAYPAUSE:
-            window.alt_tab()
+            self.window.alt_tab()
         else:
             print(f"Unknown key: {code}")
 
