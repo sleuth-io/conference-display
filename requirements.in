@@ -1,6 +1,7 @@
 obsws-python
 pyyaml
 evdev
+selenium
 
 pytest
 black
