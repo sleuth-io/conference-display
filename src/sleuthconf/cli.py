@@ -41,17 +41,12 @@ def main():
             question = random.choice(trivia.questions)
             set_trivia_text(obs, "Trivia - Q", "[text] Question", question.name)
             set_trivia_text(obs, "Trivia - A", "[text] Answer", question.answer)
-            set_trivia_timer_enabled(obs, "10s", False)
-            set_trivia_timer_enabled(obs, "30s", False)
+            obs.set_item_property("[text] Timer", "text", " ")
             time.sleep(5)
             obs.set_scene("Trivia - Q")
-            time.sleep(2)
-            set_trivia_timer_enabled(obs, "30s", True)
-            time.sleep(5)
-            set_trivia_timer_enabled(obs, "30s", False)
+            countdown_trivia_timer(obs, 5)
             obs.set_scene("Trivia - A")
-            set_trivia_timer_enabled(obs, "10s", True)
-            time.sleep(10)
+            countdown_trivia_timer(obs, 5)
     except KeyboardInterrupt:
         pass
     clicker.stop()
@@ -69,6 +64,15 @@ def set_trivia_timer_enabled(obs, name, enabled):
         "sceneItemId": item_id,
         "sceneItemEnabled": enabled,
     })
+
+
+def countdown_trivia_timer(obs, seconds):
+    time.sleep(2)
+    for cur in range(seconds, -1, -1):
+        obs.set_item_property("[text] Timer", "text", str(cur))
+        time.sleep(1)
+
+    obs.set_item_property("[text] Timer", "text", " ")
 
 
 def set_trivia_text(obs, scene_name, item_name, text):
