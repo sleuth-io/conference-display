@@ -9,3 +9,17 @@ questions:
     answer: Confluence, where you could purchase one or more spaces. The product surfaced in 2007.
   - name: What product did Atlassian purchase, rewrite, and later release as Bamboo?
     answer: Beatlejuice, a build or continuous integration server
+  - name: What was the oldest JIRA feature request to remain open for almost a decade?
+    answer: JRA-9 user timezones, resolved in 2011
+  - name: What version control system was Bitbucket built around when Atlassian purchased it?
+    answer: Mercurial. Bitbucket only supported Git a year after the acquisition in 2011
+  - name: What was Atlassian's first code review tool?
+    answer: It wasn't pull requests in Bitbucket. Atlassian's Crucible supported code review with SVN, CVS and Perforce many years before Git existed
+  - name: What was the slogan on the original, viral Atlassian JIRA t-shirt?
+    answer: Because you've got issues
+  - name: What version of Jira introduced JQL?
+    answer: JIRA 4.0 introduced JQL, along with the first major UI update JIRA had ever seen
+  - name: How did JIRA introduce support for Agile methodolgies?
+    answer: Originally this was not a first-class Jira feature. A popular plugin called GreenHopper introduced JIRA to agile. It was so popular that Atlassian bought it and added it to it's core
+  - name: How old were Mike & Scott when they started Atlassian?
+    answer: They were both 22 years old
