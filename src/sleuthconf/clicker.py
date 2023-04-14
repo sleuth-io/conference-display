@@ -34,31 +34,8 @@ class Clicker:
 
     async def _process_event(self, code):
 
-        # if code == ecodes.KEY_RIGHT:
-        #     # current_section_idx += 1
-        #     # if len(sections) == current_section_idx:
-        #     #     current_section_idx = 0
-        #     await broadcast_to_clients("next")
-        # elif code == ecodes.KEY_LEFT:
-        #     await broadcast_to_clients("prev")
-        #
-        # elif code == ecodes.KEY_POWER:
-        #     obs.call(requests.SetCurrentScene("Slides - Green screen"))
-        # elif code == ecodes.KEY_PLAYPAUSE:
-        #     obs.call(requests.SetCurrentScene("Slides - Green screen (zoom)"))
-        # elif code == ecodes.KEY_COMPOSE:
-        #     obs.call(requests.SetCurrentScene("Slides - Firefox"))
-        # elif code == ecodes.KEY_BACK:
-        #     obs.call(requests.SetCurrentScene("Coding - Webcam"))
-        # elif code == ecodes.KEY_UP:
-        #     obs.call(requests.SetSceneItemRender("Window chat", True))
-        # elif code == ecodes.KEY_DOWN:
-        #     obs.call(requests.SetSceneItemRender("Window chat", False))
         if code == ecodes.KEY_PLAYPAUSE:
             window.alt_tab()
-            pass # obs.set_scene("requests.SetCurrentScene("Slides - Video"))
-        if code == ecodes.KEY_VOLUMEUP:
-            pass
         else:
             print(f"Unknown key: {code}")
 

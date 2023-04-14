@@ -35,21 +35,23 @@ def main():
     demo = Demo()
     demo.start()
     obs = OBS("sleuth", on_connect=on_connect)
+    obs.start_fullscreen_preview()
     clicker = Clicker(obs, trivia, data)
     clicker.start()
 
     try:
         while True:
             obs.set_scene("Homepage")
-            question = random.choice(trivia.questions)
-            set_trivia_text(obs, "Trivia - Q", "[text] Question", question.name)
-            set_trivia_text(obs, "Trivia - A", "[text] Answer", question.answer)
-            obs.set_item_property("[text] Timer", "text", " ")
             time.sleep(5)
-            obs.set_scene("Trivia - Q")
-            countdown_trivia_timer(obs, 5)
-            obs.set_scene("Trivia - A")
-            countdown_trivia_timer(obs, 5)
+            for batch in range(3):
+                question = random.choice(trivia.questions)
+                set_trivia_text(obs, "Trivia - Q", "[text] Question", question.name)
+                set_trivia_text(obs, "Trivia - A", "[text] Answer", question.answer)
+                obs.set_item_property("[text] Timer", "text", " ")
+                obs.set_scene("Trivia - Q")
+                countdown_trivia_timer(obs, 5)
+                obs.set_scene("Trivia - A")
+                countdown_trivia_timer(obs, 5)
     except KeyboardInterrupt:
         pass
     clicker.stop()

@@ -19,7 +19,7 @@ class Demo:
         chromeOptions.add_experimental_option("excludeSwitches", ["enable-automation"])
         chromeOptions.add_argument("--remote-debugging-port=9222")
         driver = webdriver.Chrome(chrome_options=chromeOptions)
-        driver.get('https://app.sleuth.io/sleuth/sleuth/')
+        driver.get('https://app.sleuth.io/sleuth/sleuth/metrics/lead_time')
         self.driver = driver
 
     def stop(self):

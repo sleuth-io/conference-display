@@ -118,6 +118,12 @@ class OBS:
             "sceneItemEnabled": enabled,
         })
 
+    def start_fullscreen_preview(self):
+        self.call("OpenVideoMixProjector", {
+            "videoMixType": "OBS_WEBSOCKET_VIDEO_MIX_TYPE_PREVIEW",
+            "monitorIndex": 0
+        })
+
     def set_scene(self, name: str):
         self.call("SetCurrentProgramScene", {"sceneName": name})
 
