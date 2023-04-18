@@ -4,6 +4,7 @@ from dataclasses import dataclass
 from dataclasses import dataclass
 from datetime import datetime
 from typing import Optional
+from urllib.request import urlopen
 
 import evdev
 from evdev import ecodes
@@ -38,6 +39,12 @@ class Clicker:
 
         if code == ecodes.KEY_PLAYPAUSE:
             self.window.alt_tab()
+        elif code == ecodes.KEY_VOLUMEUP:
+            self.window.esc()
+        elif code == ecodes.KEY_VOLUMEDOWN:
+            ext_ip = urlopen('https://api.ipify.org').read()
+            self.obs.set_item_property("[text] Question", "text", f"IP: {ext_ip} ")
+            self.obs.set_scene("Trivia - Q")
         else:
             print(f"Unknown key: {code}")
 
