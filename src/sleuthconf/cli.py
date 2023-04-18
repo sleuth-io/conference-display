@@ -45,9 +45,9 @@ def main():
         while True:
             obs.set_scene("Homepage")
             time.sleep(10)
-            window.alt_tab()
-            time.sleep(10)
-            window.alt_tab()
+            # window.alt_tab()
+            # time.sleep(10)
+            # window.alt_tab()
             for batch in range(3):
                 question = random.choice(trivia.questions)
                 set_trivia_text(obs, "Trivia - Q", "[text] Question", question.name)
