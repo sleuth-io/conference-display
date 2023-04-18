@@ -3,7 +3,7 @@ from evdev import UInput, ecodes as e
 
 class Window:
     def __init__(self):
-        self.input = UInput({e.EV_KEY : [e.KEY_LEFTALT, e.KEY_TAB, e.KEY_VOLUMEUP, e.KEY_VOLUMEDOWN]})
+        self.input = UInput({e.EV_KEY : [e.KEY_LEFTALT, e.KEY_TAB, e.KEY_FN_ESC, e.KEY_VOLUMEUP, e.KEY_VOLUMEDOWN]})
 
     def alt_tab(self):
         print("tabbing")
