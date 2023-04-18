@@ -20,7 +20,7 @@ questions:
   - name: What version of Jira introduced JQL?
     answer: JIRA 4.0 introduced JQL, along with the first major UI update JIRA had ever seen
   - name: How did JIRA introduce support for Agile methodolgies?
-    answer: Originally this was not a first-class Jira feature. A popular plugin called GreenHopper introduced JIRA to agile. It was so popular that Atlassian bought it and added it to it's core
+    answer: Originally this a JIRA feature. A popular plugin called GreenHopper introduced JIRA to agile. It was so popular that Atlassian bought and integrated it.
   - name: How old were Mike & Scott when they started Atlassian?
     answer: They were both 22 years old
   - name: What does the term "Dragon's Quest" refer to?
