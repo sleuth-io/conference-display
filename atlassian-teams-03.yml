@@ -23,3 +23,23 @@ questions:
     answer: Originally this was not a first-class Jira feature. A popular plugin called GreenHopper introduced JIRA to agile. It was so popular that Atlassian bought it and added it to it's core
   - name: How old were Mike & Scott when they started Atlassian?
     answer: They were both 22 years old
+  - name: What does the term "Dragon's Quest" refer to?
+    answer: A >100 step process to install and configure all Atlassian products. If you completed it, you got a shirt.
+  - name: What was the name of the first successful Atlassian cloud product?
+    answer: JIRA Studio. It combined JIRA, Confluence, FishEye, Crucible, Crowd, and even Bamboo
+  - name: What was the first incarnation of the Atlassian Marketplace?
+    answer: A Confluence page on confluence.atlassian.com that listed all plugins
+  - name: What was the first unofficial name for JIRA Studio?
+    answer: ACNE - Atlassian CollabNet Exterminator. Yes, there is a great story behind this one.
+  - name: Who was the first Atlassian Architect?
+    answer: Charles Miller, who joined Atlassian in 2004 and works there today
+  - name: What was the first Atlassian developer conferences called?
+    answer: AtlasCamp, first held in 2009 in Half Moon Bay, California
+  - name: Where was the first Atlassian European office?
+    answer: Amsterdam, Netherlands
+  - name: Who created the Atlassian plugin system?
+    answer: Mike Cannon-Brooks coding the beginnings of v1 on a place, Sleuth's own co-founder Don Brown started v2
+  - name: What now-dead technology underpinned the first Jira Dashboards version?
+    answer: Google's OpenSocial. It never really got traction in the marketplace, however.
+  - name: "Which of these companies did Atlassian not buy: OpsGenie, StatusPage, Hall, or Trello?"
+    answer: "Trick question: Atlassian bought all of them"
