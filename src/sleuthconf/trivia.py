@@ -6,6 +6,7 @@ import yaml
 @dataclass
 class Question:
     name: str
+    choices: list[str]
     answer: str
 
 
@@ -17,7 +18,8 @@ class Trivia:
         data = data["questions"]
         for item in data:
             q = Question(
-                name=f"Q: {item['name']}",
-                answer=f"A: {item['answer']}"
+                name=item['name'],
+                choices=item['choices'],
+                answer=item['answer']
             )
             self.questions.append(q)

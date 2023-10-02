@@ -1,0 +1,71 @@
+questions:
+  - name: When was the first State of DevOps Report published?
+    choices:
+      - 2012
+      - 2013
+      - 2014
+      - 2016
+    answer: The first State of DevOps report was published in 2013.
+  - name: When did the State of DevOps research start?
+    choices:
+      - 2011
+      - 2012
+      - 2014
+      - 2016
+    answer: The State of DevOps research was started by Alanna Brown, Nigel Kersten, and James Turnbull in 2011.
+  - name: What are the four DORA metrics?
+    choices:
+      - Deployment Speed, Code Quality, Bug Rate, Uptime
+      - Development Efficiency, User Satisfaction, Revenue Growth, Team Morale
+      - Test Coverage, Code Complexity, Customer Feedback, Release Cycle
+      - Deployment Frequency, Change Lead Time, Change Failure Rate, Mean Time to Recovery
+    answer: The four measures of software delivery performance are Deployment Frequency, Change Lead Time, Change Failure Rate, and Mean Time to Recovery.
+  - name: What are the two measures of operational performance?
+    choices:
+      - Deployment Frequency, Change Lead Time
+      - Change Failure Rate, Mean Time to Recovery
+      - Deployment Speed, Code Quality
+      - Bug Rate, Uptime
+    answer: The two measures of operational performance are Change Failure Rate and Mean Time to Recovery.
+  - name: What does the MTTR metric measure?
+    choices:
+      - The time it takes to deploy a change
+      - The time it takes to fix a bug
+      - The time it takes to recover from a failure
+      - The time it takes to release a new feature
+    answer: The Mean Time to Recover, or MTTR, metric measures the time it takes to recover from a failure.
+  - name:  What is the goal of using DORA metrics in software development?
+    choices:
+      - To improve deployment speed
+      - To increase code quality
+      - To reduce the failure rate of deploys
+      - To enhance software delivery performance
+    answer: All of the above really, but the primary goal of using DORA metrics in software development is to enhance software delivery performance.
+  - name: What is the focus of the State of DevOps report?
+    choices:
+      - Software delivery performance
+      - Operational performance
+      - Organizational performance
+      - All of the above
+    answer: The State of DevOps report focuses on examining software delivery performance, operational performance, and organizational performance.
+  - name: What is the focus of the SSDF Practice Survey in the State of DevOps report?
+    choices:
+      - Supply chain security
+      - Continuous code analysis/testing
+      - Early security testing
+      - All of the above
+    answer: The SSDF Practice Survey in the State of DevOps report focuses on supply chain security, continuous code analysis/testing, and early security testing.
+  - name: Which one of these is not a key capability called out by the State of DevOps report?
+    choices:
+      - Continuous delivery
+      - Continuous integration
+      - Continuous deployment
+      - Continuous testing
+    answer: Continuous deployment is not a key capability called out by the State of DevOps report.
+  - name: What is the recommended approach when experimenting with improvements based on the State of DevOps report?
+    choices:
+      - A cautious and risk-averse approach
+      - A focus on incremental changes only
+      - A reliance on external consultants and experts
+      - A mix of victories and failures
+    answer: The State of DevOps report suggests that teams should embrace experimentation, which may involve both successful outcomes and failures, in order to learn and take meaningful actions for improvement.

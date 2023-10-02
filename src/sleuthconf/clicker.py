@@ -9,8 +9,6 @@ from urllib.request import urlopen
 import evdev
 from evdev import ecodes
 
-from sleuthconf import window
-from sleuthconf.obs import OBS
 from sleuthconf.trivia import Trivia
 from sleuthconf.window import Window
 
@@ -28,8 +26,7 @@ def find_device(name):
 
 
 class Clicker:
-    def __init__(self, obs: OBS, window: Window, trivia: Trivia, data: dict):
-        self.obs = obs
+    def __init__(self, window: Window, trivia: Trivia, data: dict):
         self.trivia = trivia
         self.window = window
         self.data = data
@@ -47,11 +44,6 @@ class Clicker:
             self.obs.set_scene("Trivia - Q")
         else:
             print(f"Unknown key: {code}")
-
-        # section = sections[current_section_idx]
-        # new_section(obs, "", "")
-        # obs.call(requests.SetCurrentScene("Interview - me (title)"))
-        # new_section(obs, section["title"], section["byline"])
 
     async def run(self):
         self.device = find_device("2.4G Composite Devic Wireless Devic Consumer Control")

@@ -1,8 +1,8 @@
-obsws-python
 pyyaml
 evdev
-selenium
 pyautogui
+quart
+
 
 pytest
 black

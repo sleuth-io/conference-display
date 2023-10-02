@@ -1,0 +1,84 @@
+
+{% extends "slides_master.html" %}
+            {% block title %}Enterprise DevOps Summit 2023{% endblock %}
+{% block content %}
+
+
+{% for _ in range(100) %}
+
+{% for _ in range(questions|count) %}
+
+<!--<section data-background-image="{{ url_for('static', filename='images') }}/Sleuth-homepage.png"-->
+<!--    data-background-position="left" data-autoslide="10000">-->
+<!--</section>-->
+
+{% with seg_index = range(0, 20) | random %}
+<section data-background-video="{{ url_for('static', filename='videos') }}/sleuth-demo-{{ seg_index }}.mp4"
+data-autoplay="true" data-autoslide="10000">
+</section>
+{% endwith %}
+
+
+<!--{% for _ in range(2) %}-->
+<!--{% with question = questions|random %}-->
+<!--<section>-->
+<!--    <h2>{{question.name}}</h2>-->
+<!--    <span class="fragment semi-fade-out" data-fragment-index="6">-->
+<!--    <ol class="fragment" data-autoslide="1" data-fragment-index="1">-->
+<!--        {% for choice in question.choices %}-->
+<!--            <li class="fragment fade-left" data-autoslide="{% if loop.last %}5000{% else %}1000{%endif%}" data-fragment-index="{{loop.index + 1}}">{{choice}}</li>-->
+<!--        {% endfor %}-->
+<!--    </ol>-->
+<!--    </span>-->
+<!--        <p class="fragment" data-autoslide="10000" data-fragment-index="6">{{question.answer}}</p>-->
+<!--</section>-->
+<!--{% endwith %}-->
+<!--{% endfor %}-->
+
+<!--{% if range(0, 3) | random  == 0 %}-->
+<!--<section data-background-video="{{ url_for('static', filename='videos') }}/Sleuth Automations Trailer Video - V2.mp4"-->
+<!--data-autoplay="true" data-autoslide="30000">-->
+<!--</section>-->
+<!--{% endif %}-->
+
+
+{% endfor %}
+
+{% endfor %}
+
+
+<!--<section data-background-video="{{ url_for('static', filename='videos') }}/Sleuth Automations Trailer Video - V2.mp4"-->
+<!--data-autoplay="true" data-autoslide="30000">-->
+<!--</section>-->
+
+{% for _ in range(questions|count) %}
+<section data-background-video="{{ url_for('static', filename='videos') }}/Sleuth Automations Trailer Video - V2.mp4"
+data-autoplay="true" data-autoslide="30000">
+</section>
+
+<section data-background-image="{{ url_for('static', filename='images') }}/Sleuth-homepage.png"
+    data-background-position="left">
+</section>
+
+{% endfor %}
+
+{% with question = questions|random %}
+<section>
+    <h2>{{question.name}}</h2>
+    <span class="fragment semi-fade-out" data-fragment-index="6">
+    <ol class="fragment" data-autoslide="1" data-fragment-index="1">
+        {% for choice in question.choices %}
+            <li class="fragment fade-left" data-autoslide="{% if loop.last %}5000{% else %}1000{%endif%}" data-fragment-index="{{loop.index + 1}}">{{choice}}</li>
+        {% endfor %}
+    </ol>
+    </span>
+        <p class="fragment" data-autoslide="10000" data-fragment-index="6">{{question.answer}}</p>
+</section>
+{% endwith %}
+
+<section>
+    <h3>Hello</h3>
+</section>
+
+{%  endblock %}
+            
